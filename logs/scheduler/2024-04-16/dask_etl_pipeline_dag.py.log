@@ -4632,3 +4632,20 @@ Traceback (most recent call last):
 ValueError: XComArg only supports str lookup, received int
 [2024-04-16T16:20:41.303+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
 [2024-04-16T16:20:41.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.187 seconds
+[2024-04-16T16:21:11.586+0000] {processor.py:161} INFO - Started process (PID=987) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:21:11.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:21:11.589+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:21:11.589+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:21:11.619+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:21:11.610+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:21:11.620+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:21:11.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.072 seconds
