@@ -4377,3 +4377,258 @@ Traceback (most recent call last):
 sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-04-16T16:13:27.851+0000] {processor.py:161} INFO - Started process (PID=851) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:13:27.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:13:28.005+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:13:27.940+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:13:28.813+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:13:28.452+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:13:28.823+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:13:32.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 5.397 seconds
+[2024-04-16T16:14:02.904+0000] {processor.py:161} INFO - Started process (PID=860) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:14:02.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:14:02.907+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:14:02.906+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:14:02.939+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:14:02.930+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:14:02.940+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:14:02.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.073 seconds
+[2024-04-16T16:14:33.460+0000] {processor.py:161} INFO - Started process (PID=869) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:14:33.463+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:14:33.464+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:14:33.464+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:14:33.493+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:14:33.488+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:14:33.497+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:14:33.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.069 seconds
+[2024-04-16T16:15:04.015+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:15:04.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:15:04.019+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:15:04.018+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:15:04.044+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:15:04.035+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:15:04.048+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:15:04.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.065 seconds
+[2024-04-16T16:15:34.522+0000] {processor.py:161} INFO - Started process (PID=886) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:15:34.523+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:15:34.524+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:15:34.524+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:15:34.579+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:15:34.567+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:15:34.586+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:15:34.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.111 seconds
+[2024-04-16T16:16:04.939+0000] {processor.py:161} INFO - Started process (PID=895) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:16:04.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:16:04.944+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:16:04.944+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:16:04.975+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:16:04.968+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:16:04.977+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:16:05.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.082 seconds
+[2024-04-16T16:16:35.140+0000] {processor.py:161} INFO - Started process (PID=904) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:16:35.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:16:35.160+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:16:35.158+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:16:35.182+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:16:35.178+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:16:35.183+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:16:35.221+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.094 seconds
+[2024-04-16T16:17:05.866+0000] {processor.py:161} INFO - Started process (PID=913) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:17:05.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:17:05.875+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:17:05.873+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:17:05.910+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:17:05.905+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:17:05.922+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:17:05.976+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.118 seconds
+[2024-04-16T16:17:36.361+0000] {processor.py:161} INFO - Started process (PID=922) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:17:36.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:17:36.364+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:17:36.363+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:17:36.386+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:17:36.378+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:17:36.388+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:17:36.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.069 seconds
+[2024-04-16T16:18:07.031+0000] {processor.py:161} INFO - Started process (PID=931) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:18:07.033+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:18:07.035+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:18:07.034+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:18:07.068+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:18:07.061+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:18:07.073+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:18:07.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.084 seconds
+[2024-04-16T16:18:37.306+0000] {processor.py:161} INFO - Started process (PID=941) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:18:37.311+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:18:37.313+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:18:37.312+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:18:37.339+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:18:37.333+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:18:37.347+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:18:37.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.096 seconds
+[2024-04-16T16:19:08.188+0000] {processor.py:161} INFO - Started process (PID=950) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:19:08.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:19:08.201+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:19:08.200+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:19:08.312+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:19:08.291+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:19:08.322+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:19:08.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.288 seconds
+[2024-04-16T16:19:38.933+0000] {processor.py:161} INFO - Started process (PID=959) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:19:38.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:19:38.947+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:19:38.946+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:19:38.995+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:19:38.979+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:19:38.996+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:19:39.110+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.193 seconds
+[2024-04-16T16:20:10.362+0000] {processor.py:161} INFO - Started process (PID=973) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:20:10.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:20:10.369+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:20:10.369+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:20:10.407+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:20:10.393+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:20:10.410+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:20:10.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.131 seconds
+[2024-04-16T16:20:41.163+0000] {processor.py:161} INFO - Started process (PID=981) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:20:41.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-16T16:20:41.191+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:20:41.190+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:20:41.301+0000] {logging_mixin.py:188} INFO - [2024-04-16T16:20:41.285+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 75, in <module>
+    op_kwargs={'orders_df': extract_task.output[0], 'products_df': extract_task.output[1], 'departments_df': extract_task.output[2]},
+                            ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 255, in __getitem__
+    raise ValueError(f"XComArg only supports str lookup, received {type(item).__name__}")
+ValueError: XComArg only supports str lookup, received int
+[2024-04-16T16:20:41.303+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-16T16:20:41.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.187 seconds
