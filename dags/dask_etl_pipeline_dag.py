@@ -7,7 +7,7 @@ import dask.dataframe as dd
 from sqlalchemy import create_engine
 from datetime import datetime
 
-# Define the default arguments for the DAG
+# Defining the default arguments for the DAG
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -16,7 +16,7 @@ default_args = {
     'retries': 1
 }
 
-# Initialize the DAG
+# Initializing the DAG
 dag = DAG(
     'dask_etl_project_dag',
     default_args=default_args,
@@ -62,7 +62,7 @@ def load_data(merged_df, orders_df):
     merged_df.compute().to_sql('new_product_data', engine_uri, if_exists='replace', index=False)
     orders_df.compute().to_sql('new_order_data', engine_uri, if_exists='replace', index=False)
 
-# Define tasks in the DAG
+# Defining tasks in the DAG
 extract_task = PythonOperator(
     task_id='extract_data',
     python_callable=extract_data,
@@ -83,5 +83,5 @@ load_task = PythonOperator(
     dag=dag
 )
 
-# Set task dependencies
+# Setting task dependencies
 extract_task >> transform_task >> load_task
