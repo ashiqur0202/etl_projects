@@ -12220,3 +12220,31 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'dask'
 [2024-04-17T18:14:53.420+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
 [2024-04-17T18:14:53.460+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.108 seconds
+[2024-04-17T18:15:24.997+0000] {processor.py:161} INFO - Started process (PID=10639) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-17T18:15:25.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:15:25.012+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:15:25.011+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-17T18:15:25.414+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:15:25.407+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 6, in <module>
+    import dask.dataframe as dd
+ModuleNotFoundError: No module named 'dask'
+[2024-04-17T18:15:25.417+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-17T18:15:25.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.496 seconds
+[2024-04-17T18:15:55.942+0000] {processor.py:161} INFO - Started process (PID=10647) to work on /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-17T18:15:55.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dask_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:15:55.945+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:15:55.944+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-17T18:15:55.969+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:15:55.964+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dask_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dask_etl_pipeline_dag.py", line 6, in <module>
+    import dask.dataframe as dd
+ModuleNotFoundError: No module named 'dask'
+[2024-04-17T18:15:55.971+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dask_etl_pipeline_dag.py
+[2024-04-17T18:15:55.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dask_etl_pipeline_dag.py took 0.066 seconds
