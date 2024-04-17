@@ -1,9 +1,9 @@
-# Libraries
+# Importing libraries
 from airflow import DAG
 from airflow.providers.mysql.operators.mysql import MySqlOperator
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
-# import dask.dataframe as dd
+import dask.dataframe as dd
 from sqlalchemy import create_engine
 from datetime import datetime
 
@@ -26,7 +26,7 @@ dag = DAG(
     catchup=False
 )
 
-# Function to extract data from MySQL into Dask DataFrames
+# Function to extract data from MySQL
 def extract_data():
     connection_params = {
         'host': 'localhost',
@@ -43,12 +43,12 @@ def extract_data():
     
     return orders_df, products_df, departments_df
 
-# Function to transform data using Dask
+# Function to transform data 
 def transform_data(orders_df, products_df, departments_df):
     merged_df = dd.merge(products_df, departments_df, on='department_id')
     return merged_df
 
-# Function to load transformed data into MySQL
+# Function to load transformed data 
 def load_data(merged_df, orders_df):
     db_settings = {
         'dbname': 'newdb',
