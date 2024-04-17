@@ -4764,3 +4764,381 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'pyspark'
 [2024-04-17T18:28:49.709+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
 [2024-04-17T18:28:49.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.104 seconds
+[2024-04-17T18:29:20.901+0000] {processor.py:161} INFO - Started process (PID=10862) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:29:20.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:29:20.904+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:29:20.903+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:29:21.088+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:29:21.080+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:29:21.109+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:29:21.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.275 seconds
+[2024-04-17T18:29:51.816+0000] {processor.py:161} INFO - Started process (PID=10870) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:29:51.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:29:51.819+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:29:51.819+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:29:51.847+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:29:51.843+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:29:51.849+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:29:51.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.106 seconds
+[2024-04-17T18:30:22.044+0000] {processor.py:161} INFO - Started process (PID=10879) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:30:22.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:30:22.047+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:30:22.046+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:30:22.067+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:30:22.064+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:30:22.071+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:30:22.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.076 seconds
+[2024-04-17T18:30:52.697+0000] {processor.py:161} INFO - Started process (PID=10887) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:30:52.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:30:52.700+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:30:52.699+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:30:52.725+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:30:52.722+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:30:52.728+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:30:52.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.063 seconds
+[2024-04-17T18:31:24.664+0000] {processor.py:161} INFO - Started process (PID=10895) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:31:24.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:31:24.696+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:31:24.695+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:31:27.093+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:31:26.773+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:31:27.189+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:31:27.488+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 2.875 seconds
+[2024-04-17T18:31:57.799+0000] {processor.py:161} INFO - Started process (PID=10909) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:31:57.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:31:57.801+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:31:57.801+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:31:57.822+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:31:57.818+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:31:57.824+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:31:57.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.062 seconds
+[2024-04-17T18:32:28.499+0000] {processor.py:161} INFO - Started process (PID=10917) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:32:28.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:32:28.503+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:32:28.502+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:32:28.523+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:32:28.520+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:32:28.525+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:32:28.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.064 seconds
+[2024-04-17T18:32:59.199+0000] {processor.py:161} INFO - Started process (PID=10925) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:32:59.201+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:32:59.203+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:32:59.202+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:32:59.231+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:32:59.227+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:32:59.232+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:32:59.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.070 seconds
+[2024-04-17T18:33:30.894+0000] {processor.py:161} INFO - Started process (PID=10933) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:33:30.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:33:30.969+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:33:30.969+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:33:32.291+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:33:32.262+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:33:32.299+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:33:32.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 1.481 seconds
+[2024-04-17T18:34:02.772+0000] {processor.py:161} INFO - Started process (PID=10941) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:34:02.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:34:02.775+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:34:02.774+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:34:02.804+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:34:02.800+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:34:02.806+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:34:02.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.072 seconds
+[2024-04-17T18:34:33.255+0000] {processor.py:161} INFO - Started process (PID=10949) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:34:33.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:34:33.262+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:34:33.261+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:34:33.301+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:34:33.297+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:34:33.302+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:34:33.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.204 seconds
+[2024-04-17T18:35:03.787+0000] {processor.py:161} INFO - Started process (PID=10957) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:35:03.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:35:03.790+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:35:03.789+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:35:03.823+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:35:03.818+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:35:03.825+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:35:03.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.076 seconds
+[2024-04-17T18:35:34.594+0000] {processor.py:161} INFO - Started process (PID=10965) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:35:34.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:35:34.597+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:35:34.597+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:35:34.620+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:35:34.616+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:35:34.622+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:35:34.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.064 seconds
+[2024-04-17T18:36:05.242+0000] {processor.py:161} INFO - Started process (PID=10973) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:36:05.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:36:05.245+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:36:05.245+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:36:05.268+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:36:05.263+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:36:05.269+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:36:05.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.070 seconds
+[2024-04-17T18:36:36.235+0000] {processor.py:161} INFO - Started process (PID=10981) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:36:36.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:36:36.238+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:36:36.238+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:36:36.259+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:36:36.256+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:36:36.261+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:36:36.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.059 seconds
+[2024-04-17T18:37:06.625+0000] {processor.py:161} INFO - Started process (PID=10990) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:37:06.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:37:06.627+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:37:06.627+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:37:06.648+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:37:06.645+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:37:06.650+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:37:06.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.061 seconds
+[2024-04-17T18:37:37.467+0000] {processor.py:161} INFO - Started process (PID=10997) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:37:37.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:37:37.470+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:37:37.470+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:37:37.501+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:37:37.493+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:37:37.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:37:37.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.103 seconds
+[2024-04-17T18:38:08.402+0000] {processor.py:161} INFO - Started process (PID=11005) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:38:08.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:38:08.406+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:38:08.406+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:38:08.442+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:38:08.429+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:38:08.443+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:38:08.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.114 seconds
+[2024-04-17T18:38:39.207+0000] {processor.py:161} INFO - Started process (PID=11013) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:38:39.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:38:39.210+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:38:39.209+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:38:39.256+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:38:39.253+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:38:39.259+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:38:39.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.094 seconds
+[2024-04-17T18:39:10.085+0000] {processor.py:161} INFO - Started process (PID=11021) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:39:10.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:39:10.088+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:39:10.087+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:39:10.107+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:39:10.103+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:39:10.108+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:39:10.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.056 seconds
+[2024-04-17T18:39:40.565+0000] {processor.py:161} INFO - Started process (PID=11030) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:39:40.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:39:40.568+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:39:40.567+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:39:40.592+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:39:40.587+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:39:40.597+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:39:40.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.082 seconds
+[2024-04-17T18:40:11.031+0000] {processor.py:161} INFO - Started process (PID=11039) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:40:11.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:40:11.035+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:40:11.035+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:40:11.064+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:40:11.059+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:40:11.066+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:40:11.106+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.089 seconds
+[2024-04-17T18:40:41.822+0000] {processor.py:161} INFO - Started process (PID=11048) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:40:41.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:40:41.824+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:40:41.824+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:40:41.964+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:40:41.960+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:40:41.965+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:40:41.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.175 seconds
+[2024-04-17T18:41:12.844+0000] {processor.py:161} INFO - Started process (PID=11056) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:41:12.845+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:41:12.847+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:41:12.846+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:41:12.865+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:41:12.861+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:41:12.866+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:41:12.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.052 seconds
+[2024-04-17T18:41:43.031+0000] {processor.py:161} INFO - Started process (PID=11064) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:41:43.032+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:41:43.033+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:41:43.033+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:41:43.054+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:41:43.050+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:41:43.055+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:41:43.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.075 seconds
+[2024-04-17T18:42:13.891+0000] {processor.py:161} INFO - Started process (PID=11072) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:42:13.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:42:13.905+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:42:13.905+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:42:13.961+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:42:13.958+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:42:13.970+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:42:14.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.190 seconds
+[2024-04-17T18:42:44.557+0000] {processor.py:161} INFO - Started process (PID=11080) to work on /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:42:44.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pyspark_etl_pipeline_dag.py for tasks to queue
+[2024-04-17T18:42:44.587+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:42:44.586+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:42:44.673+0000] {logging_mixin.py:188} INFO - [2024-04-17T18:42:44.666+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/pyspark_etl_pipeline_dag.py", line 6, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-04-17T18:42:44.674+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/pyspark_etl_pipeline_dag.py
+[2024-04-17T18:42:44.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pyspark_etl_pipeline_dag.py took 0.279 seconds
