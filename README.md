@@ -1,85 +1,116 @@
-# Project Setup Guide
+# ETL Projects
 
-This guide provides step-by-step instructions to set up your project environment using Docker, VSCode, and Docker Compose for Apache Airflow.
+This repository contains two ETL (Extract, Transform, Load) projects developed using different technologies:
 
-## Steps to Set Up the Project
+1. A small ETL project using Dask DataFrame and Airflow.
+2. A similar project using PySpark and Airflow.
 
-### 1. Get Docker Desktop
+## Table of Contents
 
-If you haven't installed Docker yet, you can download it from [Docker's official website](https://www.docker.com/products/docker-desktop).
+- [ETL Projects](#etl-projects)
+  - [Table of Contents](#table-of-contents)
+  - [Technologies Used](#technologies-used)
+  - [Project Descriptions](#project-descriptions)
+  - [Setup and Installation](#setup-and-installation)
+    - [Prerequisites](#prerequisites)
+    - [Installation Steps](#installation-steps)
+  - [Usage](#usage)
+    - [Dask DataFrame and Airflow Project](#dask-dataframe-and-airflow-project)
+    - [PySpark and Airflow Project](#pyspark-and-airflow-project)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-### 2. Get Visual Studio Code (VSCode)
+## Technologies Used
 
-If you haven't installed VSCode, you can download it from [VSCode's official website](https://code.visualstudio.com/).
+- Dask DataFrame
+- PySpark
+- Apache Airflow
 
-### 3. Get Docker Compose File
+## Project Descriptions
 
-[Download the Docker Compose file](https://airflow.apache.org/docs/apache-airflow/2.9.0/docker-compose.yaml) for project.
+### 1. Dask DataFrame and Airflow Project
 
+This project demonstrates a small ETL pipeline using Dask DataFrame and Apache Airflow. It includes tasks for data extraction, transformation, and loading using custom operators and helpers.
 
-### 4. Create `.env` File
+### 2. PySpark and Airflow Project
 
-Create a `.env` file in the same directory as your Docker Compose file and add the following environment variables:
+This project is similar to the Dask DataFrame and Airflow project but uses PySpark for data processing instead of Dask DataFrame.
 
+## Setup and Installation
 
-- AIRFLOW_IMAGE_NAME=apache/airflow:2.9.0
-- AIRFLOW_UID=50000
+### Prerequisites
 
+- Python 3.x
+- Apache Airflow
+- Dask (for Dask DataFrame project)
+- PySpark (for PySpark project)
 
-### 5. Start Docker Compose
-Run the following command to start the Docker Compose services:
+### Installation Steps
 
-- docker-compose up -d
+1. Clone the repository:
 
+    ```bash
+    git clone https://github.com/ashiqur0202/ETL-Projects.git
+    ```
 
-### 6. Access Airflow Web UI
+2. Navigate to the project directory:
 
-After the services are up and running, you can access the Airflow Web UI at:
-http://localhost:8080
+    ```bash
+    cd ETL-Projects
+    ```
 
----
+3. Install the required dependencies:
 
-## Additional Notes
-docker --version
-docker-compose --version
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-get docker 
-get vscode
+## Usage
 
-get docker compose file
+### Dask DataFrame and Airflow Project
 
-.env file and
+1. Navigate to the `dask_dataframe_airflow_project` directory:
 
-AIRFLOW_IMAGE_NAME=apache/airflow:2.9.0
-AIRFLOW_UID=50000
+    ```bash
+    cd dask_dataframe_airflow_project
+    ```
 
-docker-compose up -d
+2. Run the Airflow web server:
 
-localhost:8080
+    ```bash
+    airflow webserver -p 8080
+    ```
 
+3. Trigger the DAG from the Airflow UI or using the following command:
 
-Troubleshoots
-docker-compose ps
-docker logs materials_name_of_the_container
-docker-compose down
-docker-compose up -d
+    ```bash
+    airflow dags trigger etl_pipeline_dag
+    ```
 
-docker volume prune
-docker-compose up -d
+### PySpark and Airflow Project
 
-### Stop the Docker Containers
-docker compose down
-### Verify Containers are Stopped
-docker ps
-### Start the Docker Containers
-docker compose up -d
-### Verify Containers are Running
-docker ps
+1. Navigate to the `pyspark_airflow_project` directory:
 
-### Logs and Monitoring
-docker-compose logs -f
+    ```bash
+    cd pyspark_airflow_project
+    ```
 
-### Updating Airflow Configuration or DAGs
-docker-compose down
-docker-compose build
-docker-compose up -d
+2. Run the Airflow web server:
+
+    ```bash
+    airflow webserver -p 8080
+    ```
+
+3. Trigger the DAG from the Airflow UI or using the following command:
+
+    ```bash
+    airflow dags trigger etl_pipeline_dag
+    ```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
